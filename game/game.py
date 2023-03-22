@@ -12,25 +12,25 @@ pygame.display.set_caption('Prosta gra platformowa...')
 # Zarządzanie szybkością aktualizacji ekranu
 
 clock = pygame.time.Clock()
-font = pygame.font.Font("font1.ttf", 24)
+font = pygame.font.Font("others/font1.ttf", 24)
 
 # Dodanie muzyki do gry
 
-pygame.mixer.music.load('music.wav')
+pygame.mixer.music.load('sounds/music.wav')
 pygame.mixer.music.play(-1, 0.0, 5000) #-1 w nieskonczonosc gra muza
-coin_fx = pygame.mixer.Sound('coin.wav')
+coin_fx = pygame.mixer.Sound('sounds/coin.wav')
 coin_fx.set_volume(0.5)
-jump_fx = pygame.mixer.Sound('jump.wav')
+jump_fx = pygame.mixer.Sound('sounds/jump.wav')
 jump_fx.set_volume(0.5)
-collision_fx = pygame.mixer.Sound('collision.wav')
+collision_fx = pygame.mixer.Sound('sounds/collision.wav')
 jump_fx.set_volume(0.5)
-bullet_fx = pygame.mixer.Sound('bullet.mp3')
+bullet_fx = pygame.mixer.Sound('sounds/bullet.mp3')
 bullet_fx.set_volume(0.5)
-hit_fx = pygame.mixer.Sound('hit.mp3')
+hit_fx = pygame.mixer.Sound('sounds/hit.mp3')
 hit_fx.set_volume(0.5)
-pick_item_fx = pygame.mixer.Sound('pick_item.wav')
+pick_item_fx = pygame.mixer.Sound('sounds/pick_item.wav')
 pick_item_fx.set_volume(0.5)
-complete_level_fx = pygame.mixer.Sound('complete_level.wav')
+complete_level_fx = pygame.mixer.Sound('sounds/complete_level.wav')
 complete_level_fx.set_volume(0.5)
 
 # Klasa gracza
